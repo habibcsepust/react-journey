@@ -1,0 +1,24 @@
+->React এ সবকিছু Component
+->Component = JavaScript function → UI return করে
+->JSX (HTML + JS together)
+->Props (Data পাঠানো)
+->State (Dynamic data)
+->Event Handling
+<button onClick={handleClick}>Click</button>
+->List & map
+const users = ['Ali', 'Hasan', 'Rahim'];
+users.map(u => <li>{u}</li>)
+->STEP 4: API / Backend connect (তোমার জন্য খুব easy)
+
+তুমি যেহেতু ASP.NET Core API জানো 👏
+
+useEffect(() => {
+  fetch('https://api.example.com/users')
+    .then(res => res.json())
+    .then(data => setUsers(data));
+}, []);
+->STEP 5: CSS / Bootstrap
+তুমি যেটা জানো সেটাই use করো:
+Normal CSS
+Bootstrap
+Tailwind (later)
