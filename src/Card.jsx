@@ -1,7 +1,7 @@
 import CardHtml from './Component/CardHtml.jsx';
 import data from './data.json';
 
-
+// =======================Static data pass as props=====================
 // function Card() {
 //   const CardData_1 = {
 //     title: "Title....1",
@@ -36,7 +36,7 @@ import data from './data.json';
 //   );
 // }
 
-// ============================================
+// =======================Simple json data retirive and pass as props=====================
 
 // function Card() {
 //   console.log(data[0].title);
@@ -73,7 +73,7 @@ import data from './data.json';
 //   );
 // }
 
-// ==========================================
+// =====================json data retirive without any loop or mapping and pass as props=====================
 
 // function Card() {
 //   console.log(data[0].title);
@@ -88,21 +88,38 @@ import data from './data.json';
 //   );
 // }
 
-// ===========================================
+// =====================json data retirive using for loop and pass as props======================
 
+
+// function Card() {
+//   // console.log(data[0].title);
+//   let items = [];
+//   for(let i = 0; i<data.length; i++){
+//     items.push(<CardHtml title={data[i].title} description={data[i].description} image={data[i].image} />);
+//   }
+//   return (
+//     <div className='allCards'>
+//       {items}
+//     </div>
+//   );
+// }
+
+
+// =====================json data retirive using Map and pass as props======================
 
 function Card() {
   // console.log(data[0].title);
   let items = [];
-  for(let i = 0; i<data.length; i++){
-    items.push(<CardHtml title={data[i].title} description={data[i].description} image={data[i].image} />);
-  }
+  items = data.map((item, index)=>(<CardHtml key={index} title={item.title} description={item.description} image={item.image} />))
+
+  
   return (
     <div className='allCards'>
       {items}
     </div>
   );
 }
+
 
 
 export default Card;
