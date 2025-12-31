@@ -1,7 +1,7 @@
 import '../style.css'
 function CardHtml(props) {
   // Console log props.title
-  console.log("props: " + props.title);
+  // console.log("props: " + props.title);
 
   // destructuring
   const {image,title,description} = props;

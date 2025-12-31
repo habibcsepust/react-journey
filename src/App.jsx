@@ -15,6 +15,7 @@ function App() {
   color: '#333',
   backgroundColor:'purple'
 }
+
   return (
     <>
       <h1 style={{backgroundColor: 'red', color:'white', fontSize:'50px'}}>Hello React</h1>
