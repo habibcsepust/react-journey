@@ -1,21 +1,4 @@
-import './style.css'
-function CardHtml(props) {
-  // Console log props.title
-  console.log("props: " + props.title);
-  
-  return (
-    <div className="card">
-      <img src={props.image} alt="Card Image" className="card-img" />
-      <div className="card-content">
-        <h2 className="card-title">{props.title}</h2>
-        <p className="card-description">
-          {props.description}
-        </p>
-        <button className="card-btn">Learn More</button>
-      </div>
-    </div>
-  );
-}
+import CardHtml from './Component/CardHtml.jsx';
 
 function Card() {
   const CardData_1 = {
