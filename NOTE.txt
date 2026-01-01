@@ -22,3 +22,27 @@ useEffect(() => {
 Normal CSS
 Bootstrap
 Tailwind (later)
+==============================================
+--> Mapping er khetre jodi arrow(=>) sign er por second bace dei tahole obossoi return keyword use korte hobe.
+like this below example.
+
+function List() {
+ console.log("uuid: "+uuidv4())
+  return (
+    <div className='task'>
+        {todos.map((todo)=>{
+            const {id, title, description} = todo;
+            return <div key={id}>
+                <h3>{title}</h3>
+                <p>{description}</p>
+            </div>
+        })}
+    </div>
+  )
+};
+
+
+--> Mapping er khetre jodi arrow(=>) sign er por second brace na dei tahole obossoi return keyword use korte hobe na. like 
+this below example.
+
+data.map((item, index)=>(<CardHtml key={index} title={item.title} description={item.description} image={item.image} />))
