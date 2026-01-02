@@ -24,7 +24,7 @@ const todos = [
 ]
 
 function List() {
- console.log("uuid: "+uuidv4())
+//  console.log("uuid: "+uuidv4())
   return (
     <div className='task'>
         {todos.map((todo)=>{

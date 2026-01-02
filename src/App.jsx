@@ -3,9 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style.css'
 import './App.css'
+import BasicInfo from './Component/JsonHandle/BasicInfo.jsx';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
   const strDate = new Date();
 
   const dateStyle = {
@@ -24,6 +26,7 @@ function App() {
        <span className="nameStyle">
         My Name is: Habibur Rahman
       </span>
+      <BasicInfo />
     </>
   )
 }
